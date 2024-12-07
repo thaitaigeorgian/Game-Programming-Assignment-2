@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Adteroid
   - Bullet
+  - Asteroid
   layers:
   - Default
   - TransparentFX
