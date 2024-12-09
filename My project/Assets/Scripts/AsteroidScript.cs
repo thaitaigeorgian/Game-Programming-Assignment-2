@@ -16,7 +16,12 @@ public class AsteroidScript : MonoBehaviour
     void Update()
     {
         float healthPercent = health / 100f;
-        spriteRenderer.color = Color.Lerp(Color.red, Color.white, healthPercent);
+        if (healthPercent <= 0.5)
+        {
+            print(Color.Lerp(Color.red, Color.white, healthPercent) + "");
+        }
+
+        spriteRenderer.color = Color.Lerp(Color.green, Color.red, healthPercent);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
