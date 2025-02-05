@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UiManager : MonoBehaviour
 {
 
-    public Text text;
+    public TMP_Text text;
     public static UiManager Instance;
 
     void Awake()
@@ -23,12 +24,12 @@ public class UiManager : MonoBehaviour
 
     }
 
-    void SetText(string _text)
+    public void SetText(string _text)
     {
         text.text = _text;
     }
 
-    void ClearText()
+    public void ClearText()
     {
         text.text = "";
     }

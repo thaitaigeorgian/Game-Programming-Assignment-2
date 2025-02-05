@@ -5,14 +5,21 @@ using UnityEngine.UI;
 
 public class InteractionPoint : MonoBehaviour
 {
-    public GameObject interactionPrompt;
-    public Text infoText;
+    bool isPlayerInside = false;
+    void Update()
+    {
+        if (isPlayerInside && Input.GetKeyDown(KeyCode.E))
+        {
+            OnInteract();
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            interactionPrompt.SetActive(true);
+            UiManager.Instance.SetText("Press E to interact with animals");
+            isPlayerInside = true;
         }
     }
 
@@ -20,12 +27,13 @@ public class InteractionPoint : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            interactionPrompt.SetActive(false);
+            UiManager.Instance.ClearText();
+            isPlayerInside = false;
         }
     }
 
     public void OnInteract()
     {
-        infoText.text = "You interacted with the habitat.";
+        Debug.Log("OnInteract");
     }
 }
