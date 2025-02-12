@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class InteractionPoint : MonoBehaviour
 {
     bool isPlayerInside = false;
+    public string areaName;
     void Update()
     {
         if (isPlayerInside && Input.GetKeyDown(KeyCode.E))
@@ -18,7 +19,7 @@ public class InteractionPoint : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            UiManager.Instance.SetText("Press E to interact with animals");
+            UiManager.Instance.SetText($"You are in {areaName}");
             isPlayerInside = true;
         }
     }
