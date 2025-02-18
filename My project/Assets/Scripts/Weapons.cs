@@ -1,7 +1,8 @@
-
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
+using System.Collections;
+
 public enum WeaponType
 {
     RIFLE,
@@ -223,7 +224,7 @@ public class Weapons : MonoBehaviour
     {
         GameObject grenade = Instantiate(grenadePrefab);
         grenade.transform.position = transform.position + direction * 0.75f;
-        grenade.GetComponent<Rigidbody2D>().linearVelocity = direction * bulletSpeed;
+        grenade.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
         Destroy(grenade, 1.0f);
     }
 }

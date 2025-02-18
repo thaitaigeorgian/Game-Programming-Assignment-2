@@ -366,12 +366,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77064437}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.44, y: 1.57, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.9036455, y: 3.0864015, z: 0.037192784}
   m_LocalScale: {x: 0.7875, y: 0.7875, z: 1.575}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1159579977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &77064441
 BoxCollider2D:
@@ -468,6 +468,45 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.24, y: 10.24}
   m_EdgeRadius: 0
+--- !u!4 &116701030 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6073192622228482648, guid: d1181b2eaed525745aeda1151c5dc9b1, type: 3}
+  m_PrefabInstance: {fileID: 6858147716257776409}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &121522002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 121522003}
+  m_Layer: 0
+  m_Name: Backgrounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &121522003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121522002}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.392359, y: -3.6952245, z: -0.43692482}
+  m_LocalScale: {x: 1.0596496, y: 1.5292263, z: 11.747569}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1740439193}
+  - {fileID: 426637640}
+  - {fileID: 1904061357}
+  m_Father: {fileID: 116701030}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &269737928
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,7 +622,7 @@ GameObject:
   - component: {fileID: 426637638}
   - component: {fileID: 426637637}
   m_Layer: 0
-  m_Name: zoo-park-without-animals-scene-free-vector
+  m_Name: HippoBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -707,12 +746,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426637636}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.52, y: -9.36, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.0563545, y: -7.8435984, z: 0.037192784}
   m_LocalScale: {x: 0.6017, y: 0.6017, z: 0.6017}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 121522003}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &678871591
 GameObject:
@@ -728,7 +767,7 @@ GameObject:
   - component: {fileID: 678871592}
   - component: {fileID: 678871596}
   m_Layer: 0
-  m_Name: pngtree-animated-cartoon-flash-card-illustration-of-a-mighty-hippo-on-transparent-png-image_16575993
+  m_Name: Hippo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -853,12 +892,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678871591}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.48, y: -10.03, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.016354, y: -8.513598, z: 0.037192784}
   m_LocalScale: {x: 0.13062271, y: 0.13062271, z: 0.13062271}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1159579977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &678871596
 MonoBehaviour:
@@ -949,7 +988,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: ecf108f0023474b4c8ebe6cdd85725d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -970,7 +1009,7 @@ Transform:
   m_GameObject: {fileID: 980144685}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0000011250378, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.11, y: -4.18, z: 0}
+  m_LocalPosition: {x: 2.01, y: -3.63, z: 0}
   m_LocalScale: {x: 1.22103, y: 0.9579889, z: 1.1343197}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1075,7 +1114,7 @@ GameObject:
   - component: {fileID: 991787817}
   - component: {fileID: 991787819}
   m_Layer: 0
-  m_Name: pngtree-d-full-body-of-pink-flamingo-standing-side-view-very-beautiful-png-image_12277447
+  m_Name: Flamingo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1141,12 +1180,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991787814}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.62, y: 2.07, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.1563544, y: 3.5864012, z: 0.037192784}
   m_LocalScale: {x: 1.2769, y: 1.2769, z: 1.2769}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1159579977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &991787817
 MonoBehaviour:
@@ -1221,6 +1260,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalName: 
   age: 0
+--- !u!1 &1159579976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1159579977}
+  m_Layer: 0
+  m_Name: Animals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1159579977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159579976}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.4636455, y: -1.5164013, z: -0.037192784}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 77064440}
+  - {fileID: 991787816}
+  - {fileID: 1446318937}
+  - {fileID: 678871595}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1244817138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,7 +1443,7 @@ GameObject:
   - component: {fileID: 1446318938}
   - component: {fileID: 1446318940}
   m_Layer: 0
-  m_Name: product_monkey
+  m_Name: Monkey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1435,12 +1509,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446318935}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.32, y: -10.35, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.7836456, y: -8.833599, z: 0.037192784}
   m_LocalScale: {x: 0.56867373, y: 0.5209156, z: 0.9028}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1159579977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1446318938
 MonoBehaviour:
@@ -1528,7 +1602,7 @@ GameObject:
   - component: {fileID: 1740439191}
   - component: {fileID: 1740439190}
   m_Layer: 0
-  m_Name: pngtree-cartoon-pond-png-image_13608218
+  m_Name: FlamingoBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1652,12 +1726,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740439189}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.17, y: 1.5553, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.7063546, y: 3.0717013, z: 0.037192784}
   m_LocalScale: {x: 3.5203, y: 3.4949536, z: 3.5203}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 121522003}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1904061353
 GameObject:
@@ -1672,7 +1746,7 @@ GameObject:
   - component: {fileID: 1904061355}
   - component: {fileID: 1904061354}
   m_Layer: 0
-  m_Name: zoo-entrance-with-no-visitors-illustration-free-vector
+  m_Name: MonkeyBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1796,12 +1870,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904061353}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.93, y: -9.42, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.393645, y: -7.903599, z: 0.037192784}
   m_LocalScale: {x: 0.7287, y: 0.7287, z: 0.7287}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 121522003}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2130278255
 GameObject:
@@ -1950,7 +2024,10 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 6683396676657897844, guid: d1181b2eaed525745aeda1151c5dc9b1, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6073192622228482648, guid: d1181b2eaed525745aeda1151c5dc9b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 121522003}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5210258614800496882, guid: d1181b2eaed525745aeda1151c5dc9b1, type: 3}
       insertIndex: -1
@@ -1965,10 +2042,4 @@ SceneRoots:
   - {fileID: 6858147716257776409}
   - {fileID: 269737932}
   - {fileID: 2130278258}
-  - {fileID: 77064440}
-  - {fileID: 1740439193}
-  - {fileID: 426637640}
-  - {fileID: 1904061357}
-  - {fileID: 991787816}
-  - {fileID: 1446318937}
-  - {fileID: 678871595}
+  - {fileID: 1159579977}
