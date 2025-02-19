@@ -7,28 +7,37 @@ public interface IInteractable
     void Interact();
 }
 
-public interface IPlayable
+public interface IMakeSoundable
 {
-    void Play();
+    void MakeSound();
 }
 
-public abstract class Animal : MonoBehaviour, IInteractable, IPlayable
+public abstract class Animal : MonoBehaviour, IInteractable, IMakeSoundable
 {
     public string animalName;
     public int age;
     bool isPlayerInside = false;
+
+    public Vector3 originalPosition;
+
+    void Start()
+    {
+        originalPosition = transform.position;
+        _Start();
+    }
 
     void Update()
     {
         if (isPlayerInside && Input.GetKey(KeyCode.E))
         {
             Interact();
-            transform.Rotate(0, 0, Time.deltaTime * 100.0f);
+
         }
-        else if (isPlayerInside && Input.GetKey(KeyCode.P))
+        else if (isPlayerInside && Input.GetKey(KeyCode.S))
         {
-            Play();
-            transform.Rotate(0, 0, Time.deltaTime * 100.0f);
+            // Play();
+            MakeSound();
+            // transform.Rotate(0, 0, Time.deltaTime * 100.0f);
         }
     }
 
@@ -36,14 +45,14 @@ public abstract class Animal : MonoBehaviour, IInteractable, IPlayable
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            UiManager.Instance.SetText($"Press E to interact with {animalName}\nPress P to play with {animalName}");
+            UiManager.Instance.SetText($"Hold E to interact with {animalName}\nPress S - animal make sound {animalName}");
             isPlayerInside = true;
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             UiManager.Instance.ClearText();
             isPlayerInside = false;
@@ -52,6 +61,7 @@ public abstract class Animal : MonoBehaviour, IInteractable, IPlayable
     }
 
     public abstract void Eat();
+    public abstract void _Start();
 
     public abstract void Interact();
     public abstract void Play();

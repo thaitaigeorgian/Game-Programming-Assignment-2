@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Monkey : Animal
 {
-    void Start()
+    public override void _Start()
     {
         animalName = "Monkey";
         age = 3;
@@ -16,7 +16,8 @@ public class Monkey : Animal
     }
     public override void Interact()
     {
-        UiManager.Instance.SetText($"Calling Interact Func. {animalName} is interacting with you");
+        // UiManager.Instance.SetText($"Calling Interact Func. {animalName} is interacting with you");
+        transform.Rotate(0, Time.deltaTime * 50.0f < 10f ? 10f : Time.deltaTime * 50.0f, Time.deltaTime * 100.0f);
     }
     public override void Play()
     {
@@ -24,7 +25,7 @@ public class Monkey : Animal
     }
     public override void MakeSound()
     {
-        Debug.Log("Monkey is making sound");
+        UiManager.Instance.SetText($"{animalName} is making sound: Oo oo aa aa!");
     }
 
 }
