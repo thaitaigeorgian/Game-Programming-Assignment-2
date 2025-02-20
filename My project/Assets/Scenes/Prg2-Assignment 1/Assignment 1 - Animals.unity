@@ -304,8 +304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 399edbc5b4f052f4da1bc4a4974a0153, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalName: 
-  age: 0
+  animalName: Lion
+  age: 8
   originalPosition: {x: 0, y: 0, z: 0}
 --- !u!212 &77064439
 SpriteRenderer:
@@ -1044,8 +1044,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d476c517f5be424a8d8d2ab83e603a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalName: 
-  age: 0
+  animalName: Hippo
+  age: 26
   originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &720592117
 GameObject:
@@ -1523,8 +1523,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3deb2e05580ee134faf699123be283a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalName: 
-  age: 0
+  animalName: Flamingo
+  age: 21
   originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1019069800
 GameObject:
@@ -2068,8 +2068,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4236ace82ece70b4c8f12b12bd780d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalName: 
-  age: 0
+  animalName: Monkey
+  age: 15
   originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1487284503
 GameObject:
